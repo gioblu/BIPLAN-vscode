@@ -1,0 +1,42 @@
+{
+  "main": "./extension.js",
+  "name": "biplan",
+  "displayName": "BIPLAN",
+  "description": "BIPLAN programming language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.105.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "BIPLAN Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/biplan-color-theme.json"
+      }
+    ],
+    "languages": [
+      {
+        "id": "biplan",
+        "aliases": [
+          "BIPLAN",
+          "biplan"
+        ],
+        "extensions": [
+          ".biplan"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "biplan",
+        "scopeName": "source.biplan",
+        "path": "./syntaxes/biplan.tmLanguage.json"
+      }
+    ]
+  }
+}

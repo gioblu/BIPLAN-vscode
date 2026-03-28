@@ -1,0 +1,106 @@
+{
+	"name": "biplan",
+	"scopeName": "source.biplan",
+	"patterns": [
+		{
+			"name": "comment.line.double-slash.biplan",
+			"match": "//.*$"
+		},
+		{
+			"name": "keyword.control.biplan",
+			"match": "\\b(for|next|while|if|else|locals|end|function|return|macro|to)\\b"
+		},
+		{
+			"name": "constant.language.biplan",
+			"match": "\\b(false|true|LOW|HIGH|INPUT|OUTPUT|CR|LF|EOF)\\b"
+		},
+		{
+			"name": "entity.name.function.macro.biplan",
+			"match": "(?<=\\bmacro\\s)\\b[A-Z_][A-Z0-9_]*\\b"
+		},
+		{
+			"name": "support.macro.biplan",
+			"match": "\\b[A-Z_][A-Z0-9_]*\\b"
+		},
+		{
+			"name": "constant.character.biplan",
+			"match": "'(?:\\\\.|[^\\\\'])'"
+		},
+		{
+			"name": "keyword.basic.biplan",
+			"match": "\\b(read|write|open|close|break|continue|stop|restart|char|cursor)\\b"
+		},
+		{
+			"name": "support.function.biplan",
+			"match": "\\b(adc|args|delay|file|include|index|input|io|mem|millis|number|print|random|serial|size|string|system)\\b"
+		},
+		{
+			"name": "variable.language.at.biplan",
+			"match": "@[\\w]+"
+		},
+		{
+			"name": "variable.language.hash.biplan",
+			"match": "#[\\w]+"
+		},
+		{
+			"name": "variable.language.colon.biplan",
+			"match": ":[\\w]+"
+		},
+		{
+			"name": "variable.language.dollar.biplan",
+			"match": "\\$[\\w]+"
+		},
+		{
+			"name": "punctuation.definition",
+			"match": "[$#:@]"
+		},
+		{
+			"name": "string.quoted.double.biplan",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.biplan",
+					"match": "\\\\."
+				}
+			]
+		},
+		{
+			"name": "constant.numeric.biplan",
+			"match": "\\b\\d+\\b"
+		},
+		{
+			"name": "keyword.operator.biplan",
+			"match": "\\+\\+|--|==|!=|<=|>=|&&|\\|\\||<<|>>|\\+|\\-|\\*|\\/|%|<|>|&|\\||\\^|~|\\bnot\\b|="
+		},
+		{
+			"name": "entity.name.function.biplan",
+			"begin": "\\bfunction\\s+([a-zA-Z_][\\w]*)\\b",
+			"beginCaptures": {
+				"1": {
+					"name": "entity.name.function.biplan"
+				}
+			},
+			"end": "(?=\\breturn\\b)",
+			"patterns": [
+				{
+					"name": "variable.parameter.biplan",
+					"match": "\\$[\\w]+"
+				}
+			]
+		},
+		{
+			"name": "entity.name.function.call.biplan",
+			"match": "\\b([a-zA-Z_][\\w]*)\\s*(?=\\()"
+		},
+		{
+			"name": "punctuation.parenthesis",
+			"match": "[\\(\\)]"
+		},
+		{
+			"name": "punctuation.brackets.square",
+			"match": "[\\[\\]]"
+		}
+	],
+	"repository": {}
+}
