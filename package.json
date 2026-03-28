@@ -1,8 +1,8 @@
 {
   "main": "./extension.js",
-  "name": "biplan",
-  "displayName": "BIPLAN",
-  "description": "BIPLAN programming language",
+  "name": "biplan-vscode",
+  "displayName": "BIPLAN-vscode",
+  "description": "The BIPLAN extension implements basic syntax highlitghting for the BIPLAN programming language.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.105.0"
@@ -38,5 +38,9 @@
         "path": "./syntaxes/biplan.tmLanguage.json"
       }
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/vscode-biplan.git"
   }
 }
