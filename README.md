@@ -1,6 +1,6 @@
-# BIPLAN README
+# BIPLAN-vscode
 
-The BIPLAN extension implements basic syntax highlitghting for the BIPLAN programming language. This extension is designed to enhance readability and improve coding efficiency by visually marking keywords, operators, variables, functions, and other BIPLAN language constructs.
+The BIPLAN-vscode extension implements basic syntax highlitghting for the BIPLAN programming language. This extension is designed to enhance readability and improve coding efficiency by visually marking keywords, operators, variables, functions, and other BIPLAN language constructs.
 
 ![example](/example.png)
 
