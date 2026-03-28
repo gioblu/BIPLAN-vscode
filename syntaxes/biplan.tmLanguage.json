@@ -8,7 +8,7 @@
 		},
 		{
 			"name": "keyword.control.biplan",
-			"match": "\\b(for|next|while|if|else|locals|end|function|return|macro|to)\\b"
+			"match": "\\b(for|next|while|if|else|locals|end|function|return|done|macro|to)\\b"
 		},
 		{
 			"name": "constant.language.biplan",
